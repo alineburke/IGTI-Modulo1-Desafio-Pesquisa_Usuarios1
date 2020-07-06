@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/stylep.css" />
+    <title>Desafio -Pesquisa de Usuário</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pesquisa de Usuário</h1>
+      <div class="search" id="inputName">
+        <form action="">
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Digite um nome..."
+          />
+          <button id="searchButton" type="button">Busca</button>
+        </form>
+      </div>
+      <div class="found-users" id="foundUsers">
+        <!-- <h4>(<span id="countFoundUsers"></span>)</h4> -->
+        <div id="countFoundUsers"></div>
+        <div class="chosen-users" id="chosenUsers"></div>
+
+        <div class="statistic">
+          <h3>Estátisticas</h3>
+          <ul class="statistic-list">
+            <li>Sexo masculino:(<span id="totalMale"></span>)</li>
+            <li>Sexo feminino:(<span id="totalFemale"></span>)</li>
+            <li>Soma das idades:(<span id="totalAge"></span>)</li>
+            <li>Média das idades:(<span id="avaregeAge"></span>)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/scriptp.js"></script>
+  </body>
+</html>
